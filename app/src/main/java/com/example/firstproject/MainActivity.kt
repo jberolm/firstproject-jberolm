@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.firstproject.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
+// Minor change
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
