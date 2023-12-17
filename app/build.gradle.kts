@@ -48,14 +48,11 @@ sonar {
 }
 
 buildscript {
-    // Define versions in a single place
-    extra.apply{
-        set("AndroidCore", "1.9.0")
-    }
+    extra["AndroidCore"] = "1.9.0"
+    val AndroidCore: String by extra
 }
-
+val AndroidCore: String by extra
 dependencies {
-    val AndroidCore = rootProject.extra["AndroidCore"]
     implementation("androidx.core:core-ktx:$AndroidCore")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
