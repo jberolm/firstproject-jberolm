@@ -47,8 +47,11 @@ sonar {
   }
 }
 
-ext {
-    AndroidCore = "1.9.0"
+buildscript {
+    // Define versions in a single place
+    extra.apply{
+        set("AndroidCore", "1.9.0")
+    }
 }
 
 dependencies {
